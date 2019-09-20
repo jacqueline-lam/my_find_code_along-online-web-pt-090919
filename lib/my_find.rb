@@ -3,10 +3,9 @@ require 'pry'
 def my_find(collection)
   i = 0 
   while i < collection.length #Step 1: iterate thru each ele in passed in collection
-    #Step 2: for each ele in collection, yield to block
-    #3 Use return value of the yeild block
+    # Step 2: for each ele in collection, yield to block
+    # Step 3 Use return value of the yeild block
     return collection[i] if yield(collection[i]) 
-    end
     i += 1
   end
   binding.pry
