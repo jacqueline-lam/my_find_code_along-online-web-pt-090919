@@ -4,7 +4,7 @@ def my_find(collection)
   i = 0 
   while i < collection.length #Step 1: iterate thru each ele in passed in collection
     if yield(collection[i]) #Step 2: for each ele in collection, yield to block
-      return collection[i]
+      return collection[i] #3 Use return value of the yeild block
     end
     i += 1
   end
