@@ -12,7 +12,7 @@ def my_find(collection)
 end
 
 collection = (1..100).to_a
-my_find(collection) {|i| i % 3 == 0 and i % 5 == 0 }
+my_find(collection) {|i| i % 3 == 0 and i % 5 == 0 } #=> return first ele in array that eva. to true = 15
 
 # As this code executes it will look like this: 
 # def my_find(collection)
