@@ -16,7 +16,7 @@ my_find(collection) {|i| i % 3 == 0 and i % 5 == 0 }
 # def my_find(collection)
 #   i = 0
 #   while i < 100
-#     yield(1)
+#     yield(1) #send 1 to the block, evaluate and return false
 #       i = i + 1
 #   end
 # end
